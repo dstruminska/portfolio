@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectacle Tower / Big Top Studio</title>
+    <link rel="stylesheet" href="project2style.css">
+    <script src="https://kit.fontawesome.com/bfa235b791.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+            <h><b>02</b>| SPECTACLE TOWER / BIG TOP STUDIO</h><br><br>
+    </div>
+
+<!--------------sheet1--------------->
+<div id="sheet1">
+    <div class="container">
+        SECOND YEAR ARCHITECTURE PROJECT<br>
+        <b>A COMMUNITY FOR HOUSING PERFORMERS OF CHOICE</b><br>
+        <p>Spectacle Tower is project of a community housing for visiting groups of circus performers. The project is located in An coats, Manchester, right next to an art center and a historic Hope Mill Theatre being strongly influenced by performing arts of different kinds over the years. The accommodation space has been extended by a Big Top Studio - practice and performance spaces on the site where members of the public have opportunity to engage with aspects of the performance.</p> 
+        <img src="project1/MSA logo.png" class="logo">
+    </div>
+    <img src="project2/title.png" class="titlepic">
+</div>
+<!---------------sheet2------------>
+<div id="sheet2">
+    <div class="grid">
+    <div class="container2 reveal">
+        <b>DESIGN STRATEGY</b>| PRE-FABRICATED & MOBILE HOUSING UNITS
+        <p><i>Looking into traditional circus’ history provided with many<br>creative drivers and design ideas for the project with a main<br>focus on compact, trailer-like spaces and mobile homes.</i></p>
+    </div>
+    <img src="project2/sketch.png" class="sketch">
+    </div>
+</div>
+<!---------------sheet3------------>
+<div id="sheet3">
+    <div class="grid">
+        <img src="project2/routines.png" class="routines">
+    <div class="container3 reveal">
+        <b>CIRCUS PERFORMERS</b>| CLIENT’S NEEDS & HABITS
+        <p><i>A research and analysis of a day in a life of a circus<br>performer allowed to define a programme for the<br>project in order to provide with all the necessary space<br>for the residents.  The following have been decided to be<br>created on the site: living space, training space,<br>performance space and a communal space.</i></p>
+    </div>
+    </div>
+</div>
+<!---------------sheet4------------>
+<div id="sheet4">
+    <div class="grid">
+        <img src="project2/sketch1.png" class="sketch1">
+        <img src="project2/sketch2.png" class="sketch2">
+        <img src="project2/sketch3.png" class="sketch3">
+        <img src="project2/sketch4.png" class="sketch4">
+    </div>
+    <div class="container4 reveal">
+        <b>DESIGN PROCESS</b>| GEOMETRY ON THE SITE
+        <p><i>The location of particular buildings on the site has been analyzed through a few iterations with a help of a simple sketch<br>massing model. The main focus was to provide with the most natural light in all the units of a ten-storey Spectacle Tower.<br>The chosen one provides with proper access to daylight whilst offering views to the canal and nearby park.</i></p>
+    </div>
+</div>
+<!---------------sheet5------------>
+<div id="sheet4">
+    <div class="grid">
+        <img src="project2/elevation in context1.png" class="elevation1">
+        <img src="project2/elevation in context2.png" class="elevation2">
+    </div>
+    <div class="container5 reveal">
+        <b>ENVIRONMENTAL EMERGENCY & STRUCTURAL STRATEGY</b>| MATERIAL SELECTION
+        <p><i>The Spectacle Tower building is a modular building allowing for standardized production of units and quick construction on<br>site. All of the other buildings are constructed with CLT and cladded mainly in timber as well - highly sustainable material,<br>lowering their carbon footprints. Big Top Studio performance space re-imagines the design of an original circus being<br>constructed with natural materials and encourages a reduction of materials used for construction through an application of<br>a tensile structure as its roofing.</i></p>
+    </div>
+    <img src="project2/housingunit.png" class="unit">
+</div>
+
+<!---------------bottom------------->
+<div id="bottom">
+    <div class="containerbottom">
+        <a href="project2/SPECTACLE TOWER-BIG TOP STUDIO.pdf" download class="download"><i class="fa-solid fa-download"></i> .pdf version of this project</a>
+                    <p><b>e-mail: </b><i>struminska.dominika@gmail.com</i></p>
+                    <p1><b>phone no.: </b><i>+48 575 445 046</i></p1>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/struminska.dominika"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/dstruminska"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dominika-strumi%C5%84ska-001187278/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="buttons">
+                        <a href="project1.html" class="button1">↩ previous project</a>
+                        <a href="project3.html" class="button2">next project ↪</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+</body>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "30px";
+  } else {
+    document.getElementById("header").style.fontSize = "60px";
+  }
+}
+</script>
+
+<script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+
+</body>
+</html>
