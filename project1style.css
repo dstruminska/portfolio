@@ -608,7 +608,8 @@ body{
 }
 .buttons{
     display: grid;
-    width: 500px;
+    gap: 10px;
+    width: fit-content;
     float: right;
     margin-top: -10px;
 }
