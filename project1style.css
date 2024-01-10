@@ -606,7 +606,14 @@ body{
     color: #aa977d;
     transform: translateY(-5px);
 }
+.buttons{
+    display: grid;
+    width: 500px;
+    float: right;
+    margin-top: -10px;
+}
 .button1{
+    grid-column: 1;
     font-weight: bold;
     font-size: large;
     color: #aa977d;
@@ -620,14 +627,12 @@ body{
     text-decoration: none;
     transition: background 0.5s;
     letter-spacing: 0.5px;
-    margin-left: 700px;
-    margin-bottom: 5px;
-    transform: translateY(-30px);
 }
 .button1:hover{
     background: #e2ded7;
 }
 .button2{
+    grid-column: 2;
     font-weight: bold;
     font-size: large;
     color: #aa977d;
@@ -641,9 +646,6 @@ body{
     text-decoration: none;
     transition: background 0.5s;
     letter-spacing: 0.5px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    transform: translateY(-91px);
 }
 .button2:hover{
     background: #e2ded7;
