@@ -437,7 +437,15 @@ body{
     color: #5d332e;
     transform: translateY(-5px);
 }
+.buttons{
+    display: grid;
+    gap: 10px;
+    width: fit-content;
+    float: right;
+    margin-top: -10px;
+}
 .button1{
+    grid-column: 1;
     font-weight: bold;
     font-size: large;
     color: #5d332e;
@@ -451,14 +459,12 @@ body{
     text-decoration: none;
     transition: background 0.5s;
     letter-spacing: 0.5px;
-    margin-left: 650px;
-    margin-bottom: 5px;
-    transform: translateY(-30px);
 }
 .button1:hover{
     background: #cdc2c1;
 }
 .button2{
+    grid-column: 2;
     font-weight: bold;
     font-size: large;
     color: #5d332e;
@@ -472,9 +478,6 @@ body{
     text-decoration: none;
     transition: background 0.5s;
     letter-spacing: 0.5px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    transform: translateY(-91px);
 }
 .button2:hover{
     background: #cdc2c1;
