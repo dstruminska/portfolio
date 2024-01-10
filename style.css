@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Tw Cen MT', 'Bauhaus 93', serif;
+    font-family: 'Tw Cen MT', 'Brandish', serif;
     box-sizing: border-box;
 }
 ::-moz-selection { 
@@ -102,7 +102,7 @@ nav ul li a:hover::after{
     margin-top: -1045px;
     margin-left: -1500px;
     transform: rotate(-90deg);
-    font-family: 'Bauhaus 93';
+    font-family: 'Brandish';
     letter-spacing: 15px;
     font-weight: lighter;
 }
