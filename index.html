@@ -9,13 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bfa235b791.js" crossorigin="anonymous"></script>
     <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-std" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/brandish" rel="stylesheet">
 </head>
 <body>
-<div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo.webp" class="logo">
             <ul>
                 <li><a href="#header">hello!</a></li>
                 <li><a href="#about">about me</a></li>
@@ -23,33 +20,36 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
-        <div class="header-text reveal">
-            <h1>I'm <span>Dominika Strumińska</span></h1>
-            <p2>An ARCHITECTURE GRADUATE with a strong passion for</br>broadly defined design.</p2>
-            <h2>hello!</h2>
-        </div>
+    </div>
+<div id="header">
+    <div class="headerimgs">
+        <img src="images/hello.png" class="hello">
+        <img src="images/logo.webp" class="logo">
+    </div>
+    <div class="header-text reveal">
+            I'm <span>Dominika Strumińska</span>
+            <p>An ARCHITECTURE GRADUATE with a strong passion for broadly defined design.</p>
+    </div>
     </div>
 </div>
+<div style="height: 95vh;"></div>
 <!-------------about me-------------->
 <div id="about">
-<div class="container">
-    <div class="row">
-        <div class="about-col-1">
-            <img src="images/profile pic.webp">
-        </div>
-        <div class="about-col-2">
+    <div class="aboutgrid">
+    <div class="deskContent"><img src="images/profile pic.webp" class="meimg"></div>
+        <div class="abouttext">
             <h1 class="sub-title reveal">· ABOUT ME ·</h1>
             <p>I am a recent graduate of one of the top architectural universities worldwide, ready to undertake my RIBA part 1 appreintenceship. I have graduated with an upper second class honours degree and excellent grade averages.
             <br><br>Independently, over the course of the programme I have been undertaking various side-projects - with the main one being a full campervan conversion - and developing my interests in many different fields. Being passionate about outdoors I have been regularly climbing for more than two years.
             <br><br>I am a driven person with a strong passion for design not scared to undertake new challanges and ready to share my creativity and ideas with the world of architecture. 
         </p>
-            <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('education')">· EDUCATION ·</p>
-                <p class="tab-links" onclick="opentab('experience')">· WORK EXPERIENCE ·</p>
-                <p class="tab-links" onclick="opentab('languages')">· LANGUAGES ·</p>
-                <p class="tab-links" onclick="opentab('skills')">· SKILLS ·</p>
-                <p class="tab-links" onclick="opentab('other')">· OTHER ·</p>
-            </div>
+            <ul class="tab-titles">
+                <li class="tab-links active-link" onclick="opentab('education')">· EDUCATION ·</li>
+                <li class="tab-links" onclick="opentab('experience')">· WORK EXPERIENCE ·</li>
+                <li class="tab-links" onclick="opentab('languages')">· LANGUAGES ·</li>
+                <li class="tab-links" onclick="opentab('skills')">· SKILLS ·</li>
+                <li class="tab-links" onclick="opentab('other')">· OTHER ·</li>
+            </ul>
             <div class="tab-contents  active-tab" id="education">
                 <div class="education-col-1">
                     <p><span>2020 - 2023 | BA (hons) Architecture</span><br><i>Manchester School of Architecture</i><br><br>
@@ -67,25 +67,25 @@
             <div class="tab-contents" id="skills">
                 <div class="skills-col-1">
                     <p><span>software skills</span><br><br>
-                        <img src="software skills/microsoft office.webp" width="50px" style="margin: 6px;" title="Microsoft Office">
-                        <img src="software skills/html.webp" width="50px" style="margin: 6px;" title="HTML & CSS"> 
-                        <img src="software skills/photoshop.webp" width="50px" style="margin: 6px;" title="Adobe Photoshop"> 
-                        <img src="software skills/indesign.webp" width="50px" style="margin: 6px;" title="Adobe Indesign">
-                        <img src="software skills/lightroom.webp" width="50px" style="margin: 6px;" title="Adobe Lightroom">  <br>
-                        <img src="software skills/autocad.webp" width="50px" style="margin: 6px;" title="Adobe AutoCAD">
-                        <img src="software skills/sketchup.webp" width="50px" style="margin: 6px;" title="SketchUp"> 
-                        <img src="software skills/enscape.webp" width="50px" style="margin: 6px;" title="Enscape"> 
-                        <img src="software skills/premiere pro.webp" width="50px" style="margin: 6px;" title="Adobe Premiere Pro"> 
-                        <img src="software skills/after effects.webp" width="50px" style="margin: 6px;" title="Adobe After Effects"> 
+                        <img src="software skills/microsoft office.webp" width="45px" style="margin: 4px" title="Microsoft Office">
+                        <img src="software skills/html.webp" width="45px" style="margin: 4px" title="HTML & CSS"> 
+                        <img src="software skills/photoshop.webp" width="45px" style="margin: 4px" title="Adobe Photoshop"> 
+                        <img src="software skills/indesign.webp" width="45px" style="margin: 4px" title="Adobe Indesign">
+                        <img src="software skills/lightroom.webp" width="45px" style="margin: 4px" title="Adobe Lightroom">  <br>
+                        <img src="software skills/autocad.webp" width="45px" style="margin: 4px" title="Adobe AutoCAD">
+                        <img src="software skills/sketchup.webp" width="45px" style="margin: 4px" title="SketchUp"> 
+                        <img src="software skills/enscape.webp" width="45px" style="margin: 4px" title="Enscape"> 
+                        <img src="software skills/premiere pro.webp" width="45px" style="margin: 4px" title="Adobe Premiere Pro"> 
+                        <img src="software skills/after effects.webp" width="45px" style="margin: 4px" title="Adobe After Effects"> 
                     </p>
                 </div>
                 <div class="skills-col-2">
                     <p><span>manual skills</span><br><br>
-                    <img src="manual skills/hand drawing.webp" width="50px" style="margin: 6px;" title="hand drawing"> 
-                    <img src="manual skills/hand tools.webp" width="50px" style="margin: 6px;" title="power tools"> 
-                    <img src="manual skills/model making.webp" width="50px" style="margin: 6px;" title="model making"> 
-                    <img src="manual skills/sewing.webp" width="50px" style="margin: 6px;" title="sewing">  
-                    <img src="manual skills/woodworking.webp" width="50px" style="margin: 6px;" title="woodworking"> 
+                    <img src="manual skills/hand drawing.webp" width="45px" style="margin: 4px" title="hand drawing"> 
+                    <img src="manual skills/hand tools.webp" width="45px" style="margin: 4px" title="power tools"> 
+                    <img src="manual skills/model making.webp" width="45px" style="margin: 4px" title="model making"> 
+                    <img src="manual skills/sewing.webp" width="45px" style="margin: 4px" title="sewing">  
+                    <img src="manual skills/woodworking.webp" width="45px" style="margin: 4px" title="woodworking"> 
                 </div>
             </div>
             <div class="tab-contents" id="experience">
@@ -103,37 +103,45 @@
                 </div>
             </div>
             <div class="tab-contents" id="languages">
-                <div class="languagestext">
-                <p1>polish</p1>
-                <p2>english</p2>
-                <p3>german</p3>
-                <p4>spanish</p4>
-                </div>
-                <div class="languagestext2">
-                    <p1>native</p1>
-                    <p2>advanced</p2>
-                    <p3>good</p3>
-                    <p4>begginer</p4>
+                <div class="languagesgrid">
+                    <div class="polish">
+                        POLISH<br>native
+                        <div class="meter">
+                        <svg>
+                            <circle class="bg" cx="57" cy="57" r="52" />
+                            <circle class="meter-1" cx="57" cy="57" r="52" />
+                        </svg>
+                        </div>
                     </div>
-                <div class="languages">
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-1" cx="57" cy="57" r="52" />
-                    </svg>
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-2" cx="57" cy="57" r="52" />
-                    </svg>
-                    <svg>
-                      <circle class="bg" cx="57" cy="57" r="52" />
-                      <circle class="meter-3" cx="57" cy="57" r="52" />
-                    </svg>
-                    <svg>
-                        <circle class="bg" cx="57" cy="57" r="52" />
-                        <circle class="meter-4" cx="57" cy="57" r="52" />
-                      </svg>
-                  </div>
+                    <div class="english">
+                        ENGLISH<br>advanced
+                        <div class="meter">
+                        <svg>
+                            <circle class="bg" cx="57" cy="57" r="52" />
+                            <circle class="meter-1" cx="57" cy="57" r="52" />
+                        </svg>
+                        </div>
+                    </div>
+                    <div class="german">
+                        GERMAN<br>basic
+                        <div class="meter">
+                        <svg>
+                            <circle class="bg" cx="57" cy="57" r="52" />
+                            <circle class="meter-1" cx="57" cy="57" r="52" />
+                        </svg>
+                        </div>
+                    </div>
+                    <div class="spanish">
+                        SPANISH<br>begginer
+                        <div class="meter">
+                        <svg>
+                            <circle class="bg" cx="57" cy="57" r="52" />
+                            <circle class="meter-1" cx="57" cy="57" r="52" />
+                        </svg>
+                        </div>
+                    </div>
                 </div>
+            </div>
             <div class="tab-contents" id="other">
                 <div class="other-list">
                   <ul><br>
@@ -152,9 +160,13 @@
 <!-----------work portfolio-------------->
 <div id="portfolio">
     <h1 class="sub-title reveal">· WORK PORTFOLIO ·</h1>
-    <div class="portfolio-text">
-                Throughout my university course my main focus and passion concentrated on architectural design through hand drawing - my manual skills let me to freely experiment with and discover the art of architectural design with no limitations at its initial phase. My attention to detail and good understanding of three-dimensional spaces let me later translate those concepts into actual projects with a help of particular softwares. The combination of creativity, logic and sense of aesthetics is what I find very alluring in the field and therefore am keen to further develop those skills and apply them during the RIBA part 1 apprenticeship or some other design-related profession.<br><br>A real life side-project - a campervan conversion - I have independently undertaken during my third year of university was a realistic test to my skills as a designer and a craftswoman. Building out a little home on the space of less than 8 square meters turned out to be a great opportunity to apply my knowledge on construction and design as well as my manual skills.</div>        
-    <div class="portfolio-container">
+    <div class="portfoliodiv">
+        <div class="deskContent2">
+            <div class="portfolio-text">
+                        Throughout my university course my main focus and passion concentrated on architectural design through hand drawing - my manual skills let me to freely experiment with and discover the art of architectural design with no limitations at its initial phase. My attention to detail and good understanding of three-dimensional spaces let me later translate those concepts into actual projects with a help of particular softwares. The combination of creativity, logic and sense of aesthetics is what I find very alluring in the field and therefore am keen to further develop those skills and apply them during the RIBA part 1 apprenticeship or some other design-related profession.<br><br>A real life side-project - a campervan conversion - I have independently undertaken during my third year of university was a realistic test to my skills as a designer and a craftswoman. Building out a little home on the space of less than 8 square meters turned out to be a great opportunity to apply my knowledge on construction and design as well as my manual skills.     
+            </div>
+        </div>
+        <div class="portfolio-container">
         <div class="portfolio-list">
             <a href="project1.html">
             <div class="div1">
@@ -186,11 +198,11 @@
             </a>
         </div>
     </div>
+    </div>
 </div>
 <!-------------------contact---------------->
 <div id="contact">
-    <div class="container">
-        <div class="row">
+    <div class="contactgrid">
             <div class="contact-left">
                 <h1 class="sub-title" STYLE="letter-spacing:6px">· contact me ·</h1>
                 <p><b>e-mail: </b><i>struminska.dominika@gmail.com</i></p>

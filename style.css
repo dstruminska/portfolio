@@ -21,35 +21,42 @@ body{
     color: #000;
 }
 #header{
-    margin-top: -20px;
+    position: fixed;
+    z-index: -1;
+    margin-top: 0;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-image: url(images/dotted\ paper\ background.webp);
     background-size: cover;
     background-position: center;
 }
 .container{
+    
     padding: 80px 10%;
+    float: right;
 }
+
+@media all and (max-width: 959px) {
+    .container {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .container {display:none;}
+    .phoneContent {display:block;}
+}
+
 nav{
     display: flex;
     align-items: start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.logo{
-    margin-top: 10px;
-    width: 220px;
-    margin-left: 100px;
-}
-
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-
 }
-
 nav ul li a{
     color: #000;
     text-decoration: none;
@@ -57,7 +64,6 @@ nav ul li a{
     font-weight: bolder;
     position: relative;
 }
-
 nav ul li a::after{
     content: '';
     width: 0;
@@ -71,10 +77,46 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+.headerimgs{
+    margin-top: 40px;
+    float: left;
+    display: grid;
+    margin-left: 12%;
+    width: fit-content;
+    gap: 20px;
+    padding: 5% 0;
+
+}
+.hello{
+    grid-column: 1;
+    width: 40px;
+    transform: translateY(280px);
+}
+.logo{
+    grid-column: 2;
+    width: 220px;
+}
+
 .header-text{
-    margin-top: -300px;
-    margin-left: 390px;
-    font-size: 30px;
+    display: inline;
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 60px;
+    width: fit-content;
+    font-size: 40px;
+    font-weight: normal;
+}
+.header-text span{
+    font-size: 60px;
+    font-weight: bold;
+    color: #aa977d;
+}
+.header-text p{
+    width: 80%;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 2px;
 }
 .reveal{
     letter-spacing: 2px;
@@ -83,51 +125,56 @@ nav ul li a:hover::after{
 .reveal.active{
     letter-spacing: 6px;
 }
-.header-text h1{
-    font-size: 40px;
-    font-weight: normal;
-}
-.header-text h1 span{
-    font-size: 60px;
-    font-weight: bold;
-    color: #aa977d;
-}
-.header-text p2{
-    font-size: 25px;
-    font-style: italic;
-    letter-spacing: 2px;
-}
-.header-text h2{
-    font-size: 65px;
-    margin-top: -1045px;
-    margin-left: -1500px;
-    transform: rotate(-90deg);
-    font-family: 'Brandish';
-    letter-spacing: 15px;
-    font-weight: lighter;
-}
-/*--------------about me-----------------*/
-#about{
-    padding: 40px 0px;
-    color: #000;
-    margin-top: -50px;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+@media all and (max-width: 959px) {
+    .header-text {display:block;}
+    .phoneContent {display:none;}
 }
 
-.about-col-1{
-    flex-basis: 33%;
+@media all and (max-width: 479px) {
+    .header-text {display:none;}
+    .phoneContent {display:block;}
 }
-.about-col-1 img{
-    width: 60%;
-    margin-left: 45%;
-    margin-top: 12%;
+
+/*--------------about me-----------------*/
+#about{
+    background-color: #fff;
+    padding: 0px 0px;
+    width: 100%;
+    height: fit-content;
 }
-.about-col-2{
-    flex-basis: 63%;
+.aboutgrid{
+    padding: 7% 10%;
+    display: grid;
+    width: fit-content;
+}
+.deskContent {
+    grid-column: 1;
+    justify-content: right;
+}
+
+.meimg{
+    width: 280px;
+    margin-left: 170px;
+    padding-top: 10%;
+    padding-right: 8%;
+}
+
+
+@media all and (max-width: 959px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
+
+
+.abouttext{
+    grid-column: 2;
+    width: fit-content;
 }
 
 .sub-title{
@@ -144,16 +191,19 @@ nav ul li a:hover::after{
     letter-spacing: 5px;
 }
 
-.about-col-2 p{
+.abouttext p{
     margin-top: 30px;
 }
 
 .tab-titles{
-    display: flex;
+    width: 100%;
     margin: 20px 0 40px;
 }
 .tab-links{
-    margin-right: 35px;
+    list-style: none;
+    display: inline-block;
+    margin: 16px;
+
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -180,9 +230,9 @@ nav ul li a:hover::after{
     margin-top: -30px;
 }
 .skills-col-1{
+    margin-left: 4%;
     float: left;
     text-align: center;
-    flex-basis: 50%;
 }
 .skills-col-1 p span{
     color: #aa977d;
@@ -190,9 +240,9 @@ nav ul li a:hover::after{
     letter-spacing: 3px;
 }
 .skills-col-2{
-    float: right;
+    margin-left: 4%;
+    float: left;
     text-align: center;
-    flex-basis: 50%;
 }
 .skills-col-2 p span{
     color: #aa977d;
@@ -200,8 +250,8 @@ nav ul li a:hover::after{
     letter-spacing: 3px;
 }
 .experience-col-1{
+    padding-right: 15%;
     float: left;
-    flex-basis: 50%;
 }
 .experience-col-1 p span{
     font-weight: bold;
@@ -212,7 +262,7 @@ nav ul li a:hover::after{
     font-size: small;
 }
 .experience-col-2{
-    float: right;
+    float: left;
     flex-basis: 50%;
 }
 .experience-col-2 p span{
@@ -224,6 +274,7 @@ nav ul li a:hover::after{
     font-size: small;
 }
 .education-col-1{
+    padding-right: 15%;
     float: left;
     flex-basis: 50%;
 }
@@ -236,7 +287,7 @@ nav ul li a:hover::after{
     font-size: small;
 }
 .education-col-2{
-    float: right;
+    float: left;
     flex-basis: 50%;
 }
 .education-col-2 p span{
@@ -247,55 +298,34 @@ nav ul li a:hover::after{
 .education-col-2 p span2{
     font-size: small;
 }
-.languagestext{
-    color: #aa977d;
-    word-spacing: 100px;
-    margin-left: 112px;
-    margin-top: 100px;
-    font-weight: bold;
-}
-.languagestext p2{
-    margin-left: 4px;
-}
-.languagestext p3{
-    margin-left: -3px;
-}
-.languagestext p4{
-    margin-left: -6px;
-}
 
-.languagestext2{
-    color: #aa977d;
-    word-spacing: 100px;
-    margin-left: 112px;
-    margin-top: 10px;
-    font-style: italic;
+.languagesgrid{
+    transform: translateY(60px);
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
 }
-.languagestext2 p1{
-    margin-left: 2px;
+.meter{
+    transform: translateY(-86px);
 }
-.languagestext2 p2{
-    margin-left: 0px;
+.polish{
+    text-align: center;
 }
-.languagestext2 p3{
-    margin-left: -1px;
+.english{
+    text-align: center;
 }
-.languagestext2 p4{
-    margin-left: 5px;
+.german{
+    text-align: center;
 }
-
-.languages{
-    place-items: center;
-    margin-left: -50px;
-    margin-top: -90px;
+.spanish{
+    text-align: center;
 }
-
 svg {
   width: 114px;
   height: 114px;
   margin: 1em;
 }
-
 .bg {
   fill: none;
   stroke-width: 10px;
@@ -328,7 +358,6 @@ svg {
   stroke-dashoffset: 160;
   animation: progress-3 1.35s ease-out;
 }
-
 .meter-4 {
     stroke: #aa977d;
     stroke-dasharray: 360;
@@ -344,7 +373,6 @@ svg {
         stroke-dashoffset: 0;
     }
 }
-
 @keyframes progress-2 {
   from {
     stroke-dashoffset: 360;
@@ -390,21 +418,40 @@ svg {
 
 /*-----------------portfolio---------------*/
 #portfolio{
-    padding: 30px 170px;
+    padding: 60px 10%;
     background-image: url(images/dotted\ paper\ background.webp);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: fit-content;
+    width: 100%;
+
 }
-.portfolio-container{
-   width: 52%;
-   float: right;
+.portfoliodiv{
+    display: grid;
+    column-gap: 3%;
 }
-.portfolio-text{
+.deskContent2{
+    grid-column: 1;
     margin-top: 200px;
-    width: 45%;
+    width: 100%;
     float: left;
     text-align: right;
+}
+
+@media all and (max-width: 959px) {
+    .deskContent2 {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .deskContent2 {display:none;}
+    .phoneContent {display:block;}
+}
+
+.portfolio-container{
+    grid-column: 2;
+    width: 100%;
+    float: right;
 }
 .portfolio-list{
     display: grid;
@@ -491,16 +538,35 @@ svg {
 
 /*--------------contact-------------*/
 #contact{
-    padding: 30px 120px;
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+}
+.contactgrid{
+    padding: 5% 18%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contact-left{
-    flex-basis: 35%;
+    width: fit-content;
 }
 .contact-right{
-    flex-basis: 65%;
+    width: fit-content;
 }
+
+@media all and (max-width: 959px) {
+    .contact-right {display:block;}
+    .phoneContent {display:none;}
+}
+
+@media all and (max-width: 479px) {
+    .contact-right {display:none;}
+    .phoneContent {display:block;}
+}
+
 .contact-left h1{
-    padding: 20px;
+    padding: 20px 0 20px 6%;
     text-align: left;
 }
 .contact-left p{
